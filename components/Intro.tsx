@@ -40,11 +40,14 @@ export default function Intro() {
           className='font-medium text-2xl mt-4 !leading-[1.5] mb-10 sm:text-4xl'
         initial={{
           opacity: 0,
-          y: 100
+          y: 200
         }}
         animate={{
           opacity: 1,
           y: 0
+        }}
+        transition={{
+          duration:0.4
         }}
         >
         <span className='font-bold'>Hello, I'm Mustapha. </span>
