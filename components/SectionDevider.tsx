@@ -17,7 +17,7 @@ export default function SectionDevider() {
         y:0
       }}
       transition={{
-        delay:0.2
+        delay: 0.2
       }}
     >
 

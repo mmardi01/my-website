@@ -19,9 +19,7 @@ export default function About() {
   }}
   className='text-center mb-28 sm:mb-40 max-w-[45rem] leading-8'>
     <SectionHeading>About Me</SectionHeading>
-    <motion.p 
-      className='mb-8'
-    >
+    <p className='mb-3'>
       I am a dedicated software engineering student enrolled at <span className='font-medium'>1337 School</span>, 
       which is part of the prestigious <span className='font-medium'>42 network</span>. Throughout my academic journey, 
       I have immersed myself in a plethora of challenging projects, 
@@ -30,7 +28,7 @@ export default function About() {
       I thrive on challenges, believing that they are opportunities for growth and innovation. As I look ahead to my career, 
       I am determined to channel my enthusiasm and expertise into becoming a proficient front-end developer. 
       I am excited about the dynamic world of web development and look forward to creating user-friendly and visually captivating interfaces that enhance the digital experience for all.
-    </motion.p>
+    </p>
   </motion.section>
   )
 }
