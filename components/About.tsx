@@ -4,8 +4,10 @@ import SectionHeading from './SectionHeading'
 import {motion} from 'framer-motion'
 
 export default function About() {
+  
   return (
-  <motion.section 
+  <motion.section
+  id='about'
   initial={{
     opacity:0,
     y:100
@@ -17,7 +19,7 @@ export default function About() {
   transition={{
     delay:0.175
   }}
-  className='text-center mb-28 sm:mb-40 max-w-[45rem] leading-8'>
+  className='text-center scroll-mt-[8rem] mb-28 sm:mb-40 max-w-[45rem] leading-8'>
     <SectionHeading>About Me</SectionHeading>
     <p className='mb-3'>
       I am a dedicated software engineering student enrolled at <span className='font-medium'>1337 School</span>, 

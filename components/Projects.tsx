@@ -5,12 +5,12 @@ import Project from './Project'
 
 
 
-export default function Projects() {
+export default function Projects () {
    
 
 
     return (
-    <section>
+    <section id='projects' className='scroll-mt-[8rem]'>
         <SectionHeading>
            My  Projects
         </SectionHeading>

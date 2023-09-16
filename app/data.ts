@@ -45,7 +45,7 @@ export const projects = [
     description:
     "This project involved creating a custom HTTP server from scratch using C++. It provided a deep dive into the world of web technology, covering topics such as HTTP requests, websockets, and various HTTP methods. By developing this server, I gained a comprehensive understanding of how web communication works and improved my proficiency in C++ programming.",
     tags:["C","C++","HTTP","WEBSOCKETS"],
-    imageUrl:"/ft_trans.png"
+    imageUrl:"/webserv.png"
   },
   {
     projectName:"Inception",
