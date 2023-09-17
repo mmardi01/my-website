@@ -51,6 +51,6 @@ export const projects = [
     projectName:"Inception",
     description:"This project aims to deepen knowledge in system administration through the use of Docker. Multiple Docker images will be virtualized within a personal virtual machine, allowing for hands-on experience in image management and system administration practices.",
     tags:["DOCKER","DOCKER COMPOSE","WORDPRESS","MARIADB","NGINX"],
-    imageUrl:"/ft_trans.png"
+    imageUrl:"/inception.png"
   }
 ]

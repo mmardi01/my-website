@@ -58,13 +58,13 @@ export default function Project({
                 quality={95}
                 className='absolute 
                 group-hover:-translate-x-3 
-                group-hover:scale-105 
+                group-hover:scale-105
                 group-hover:translate-y-3 
                 group-hover:-rotate-2 transition
                 group-even:group-hover:rotate-2
                 group-even:group-hover:translate-x-3
                 group-even:group-hover:translate-y-3
-                w-[28.25rem] group-even:right-[initial] 
+                w-[30rem] group-even:right-[initial] 
                 group-even:left-[-10rem] 
                 top-8 right-[-10rem] 
                 rounded-t-lg shadow-2xl'
