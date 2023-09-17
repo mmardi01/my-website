@@ -1,13 +1,15 @@
 'use client';
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link';
 import { links } from '@/app/data';
 import { clsx } from 'clsx';
+import { activeContext } from '@/context/ActiveSectionContext';
 
 export default function Navbar() {
-  const [activeSection, setActiveSection] = useState('Home');
   
+  const Context = useContext(activeContext);
+
   return (
     <header className='z-[999] flex justify-center  items-center w-full fixed h-[100px]'>
             <motion.div 
@@ -20,14 +22,27 @@ export default function Navbar() {
             >
             <ul className='flex w-full justify-around flex-wrap'>
              {
-                links.map((link,index)=> (
-                    <ul className={clsx('m-1 py-1   px-3 relative',{
-                      "text-gray-950": activeSection === link.name,
+                links.map((link,index) => (
+                    <ul
+                      onClick={()=>Context?.setActiveSection(link.name)} 
+                      className={clsx('m-1 py-1   px-3 relative',{
+                      "text-gray-950": Context?.activeSection === link.name,
                     })} key={index}>
                        <Link href={link.hash}>{link.name}</Link>
                        {
-                        link.name === activeSection &&
-                         <span className='bg-gray-100 absolute inset-0 rounded-full -z-10' ></span>
+                        link.name === Context?.activeSection &&
+
+                         <motion.span
+                            layoutId='activeSection' 
+                            transition={{
+                              type: 'spring',
+                              stiffness: 300,
+                              damping: 30,
+
+                            }}
+                            className='bg-gray-100 absolute inset-0 rounded-full -z-10' >
+
+                          </motion.span>
                        }
                     </ul>
                 ))

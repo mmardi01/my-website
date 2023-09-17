@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import Image from 'next/image'
 import { delay, motion } from 'framer-motion'
 import Link from 'next/link'
@@ -7,10 +7,23 @@ import {BsArrowRight} from 'react-icons/bs'
 import {HiDownload} from 'react-icons/hi'
 import { BsLinkedin } from 'react-icons/bs'
 import { FaGithubSquare } from 'react-icons/fa'
+import { useInView } from 'react-intersection-observer'
+import { activeContext } from '@/context/ActiveSectionContext'
 
 export default function Intro() {
+
+  const Context = useContext(activeContext);
+  const {ref, inView} = useInView();
+
+  useEffect(() => {
+
+    if (inView) {
+      Context?.setActiveSection('Home')
+    }
+  },[inView])
+
   return (
-    <section id="home" className='max-w-[50rem] scroll-mt-[810rem] text-center sm:mb-0 mb-5'>
+    <section ref={ref} id="home" className='max-w-[50rem] scroll-mt-[810rem] text-center sm:mb-0 mb-5'>
       <div className='flex justify-center'>
         <motion.div className='relative'
           initial={{ opacity: 0, scale: 0 }}
