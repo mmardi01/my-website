@@ -1,26 +1,24 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
 
 export default function SectionDevider() {
   return (
-    <motion.div 
-      className='bg-gray-300 h-16 w-1 
-      rounded-full my-24 hidden sm:block'
+    <motion.div
+      className="bg-gray-300 h-16 w-1 
+      rounded-full my-24 hidden sm:block"
       initial={{
-        opacity:0,
-        y:100,
+        opacity: 0,
+        y: 100,
       }}
       animate={{
-        opacity:1,
-        y:0
+        opacity: 1,
+        y: 0,
       }}
       transition={{
-        delay: 0.2
+        delay: 0.2,
       }}
-    >
-
-    </motion.div>
-  )
+    ></motion.div>
+  );
 }

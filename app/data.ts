@@ -54,3 +54,24 @@ export const projects = [
     imageUrl:"/inception.png"
   }
 ]
+
+export const skills = [
+  "C",
+  "C++",
+  "Typescript",
+  "Javascript",
+  "React",
+  "Next.js",
+  "Redux",
+  "Tailwind",
+  "Node.js",
+  "Nest.js",
+  "Prisma",
+  "PostgreSQL",
+  "Socket.io",
+  "Docker",
+  "HTML",
+  "CSS",
+  "Git",
+  "Github",
+]

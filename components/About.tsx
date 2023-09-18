@@ -7,18 +7,18 @@ import { activeContext } from "@/context/ActiveSectionContext";
 
 export default function About() {
   const Context = useContext(activeContext);
-  const {ref, inView} = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
 
-  useEffect(()=> {
-
+  useEffect(() => {
     if (inView) {
-      Context?.setActiveSection('About')
+      Context?.setActiveSection("About");
     }
-  },[inView])
+  }, [inView, Context?.setActiveSection]);
 
   return (
     <motion.section
-     
       id="about"
       initial={{
         opacity: 0,

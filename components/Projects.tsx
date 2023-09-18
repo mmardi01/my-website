@@ -8,13 +8,15 @@ import { useInView } from "react-intersection-observer";
 
 export default function Projects() {
   const Context = useContext(activeContext);
-  const { ref, inView } = useInView();
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+  });
 
   useEffect(() => {
     if (inView) {
       Context?.setActiveSection("Projects");
     }
-  }, [inView]);
+  }, [inView, Context?.setActiveSection]);
 
   return (
     <section id="projects" className="scroll-mt-[8rem]">
