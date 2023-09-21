@@ -9,7 +9,7 @@ import { useInView } from "react-intersection-observer";
 export default function Projects() {
   const Context = useContext(activeContext);
   const { ref, inView } = useInView({
-    threshold: 0.1,
+    threshold: 0.2,
   });
 
   useEffect(() => {

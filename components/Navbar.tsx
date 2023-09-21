@@ -23,7 +23,7 @@ export default function Navbar() {
           {links.map((link, index) => (
             <ul
               onClick={() => Context?.setActiveSection(link.name)}
-              className={clsx("m-1 py-1   px-2 relative", {
+              className={clsx("m-1 py-1   px-4 relative", {
                 "text-gray-950": Context?.activeSection === link.name,
               })}
               key={index}
