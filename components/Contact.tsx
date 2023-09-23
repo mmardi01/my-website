@@ -21,6 +21,20 @@ export default function Contact() {
     emailSender: "",
     message: "",
   });
+
+  const Errornotify = (err: string) => {
+    toast.error(err , {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
+
   const notify = () => {
     toast.success("Email sent successfully!", {
       position: "top-center",
@@ -54,18 +68,9 @@ export default function Contact() {
       });
       notify();
       setSending(false);
-    } catch (err) {
-      toast.error(err as string, {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "dark",
-      });
+    } catch (err : any) {
       setSending(false);
+      Errornotify(err?.message);
     }
   };
 
