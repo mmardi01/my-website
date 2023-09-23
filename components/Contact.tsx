@@ -120,10 +120,10 @@ export default function Contact() {
           onChange={(e) =>
             setFormData({ ...formData, emailSender: e.target.value })
           }
-          className="h-14 rounded-lg px-4 border border-black/10 placeholder:Your Email"
+          className="h-14 rounded-lg px-4 border dark:bg-white/20 border-black/10 placeholder:Your Email"
         />
         <textarea
-          className="h-52 my-3 p-4 rounded-lg border border-black/10"
+          className="h-52 my-3 p-4 rounded-lg dark:bg-white/20 border border-black/10"
           placeholder="Your message"
           onChange={(e) =>
             setFormData({ ...formData, message: e.target.value })
@@ -137,7 +137,7 @@ export default function Contact() {
             className="group flex items-center justify-center 
           w-[8rem] h-[3rem] rounded-full bg-gray-900
           text-white gap-2 hover:scale-105 focus:scale-100
-          transition-all hover:bg-slate-950"
+          transition-all hover:bg-slate-950 dark:bg-white/10 hover:dark:bg-white/30"
           >
             Submit{" "}
             <FaPaperPlane
@@ -151,7 +151,7 @@ export default function Contact() {
             className="group hover:cursor-not-allowed flex items-center justify-center 
         w-[8rem] h-[3rem] rounded-full bg-gray-900
         text-white gap-2 hover:scale-105 focus:scale-100
-        transition-all hover:bg-slate-950"
+        transition-all dark:bg-white/10 hover:dark:bg-white/30 hover:bg-gray-950"
           >
             <svg
               aria-hidden="true"

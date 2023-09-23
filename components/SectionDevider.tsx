@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function SectionDevider() {
   return (
     <motion.div
-      className="bg-gray-300 h-16 w-1 
+      className="bg-gray-300 dark:bg-white/50 h-16 w-1 
       rounded-full my-24 hidden sm:block"
       initial={{
         opacity: 0,

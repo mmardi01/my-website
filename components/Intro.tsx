@@ -106,7 +106,7 @@ export default function Intro() {
         <a
           href="/CV.pdf"
           download={true}
-          className="group bg-white rounded-full flex py-3 px-7 items-center gap-2 outline-none  hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
+          className="group bg-white dark:bg-opacity-20 rounded-full flex py-3 px-7 items-center gap-2 outline-none  hover:scale-110 active:scale-105 transition cursor-pointer border border-black/10"
         >
           Download CV
           <HiDownload className="group-hover:translate-y-1 transition" />
@@ -114,14 +114,14 @@ export default function Intro() {
         <a
           target="_blank"
           href="https://www.linkedin.com/in/mustapha-mardi-679044177/"
-          className="bg-white text-gray-700 rounded-full flex items-center p-4  hover:scale-110 text-[1.40rem] active:scale-105 transition border border-black/10"
+          className="bg-white dark:bg-opacity-10 dark:text-white text-gray-700 rounded-full flex items-center p-4  hover:scale-110 text-[1.40rem] active:scale-105 transition border border-black/10"
         >
           <BsLinkedin />
         </a>
         <a
           target="_blank"
           href="https://github.com/stooof01"
-          className="bg-white text-gray-700 rounded-full flex items-center p-4  text-[1.40em]  hover:scale-110 active:scale-105 transition border border-black/10"
+          className="bg-white dark:bg-opacity-20 dark:text-white text-gray-700 rounded-full flex items-center p-4  text-[1.40em]  hover:scale-110 active:scale-105 transition border border-black/10"
         >
           <FaGithubSquare />
         </a>

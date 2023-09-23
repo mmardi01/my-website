@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <header className="z-[999] flex justify-center  items-center w-full fixed h-[100px]">
       <motion.div
-        className="sm:w-[600px]  backdrop-blur-sm font-medium bg-opacity-80 text-gray-500  flex px-10 items-center w-full h-full sm:h-[55px] sm:rounded-full bg-white shadow-lg shadow-black/10 "
+        className="sm:w-[600px]  backdrop-blur-sm font-medium bg-opacity-80 text-gray-500  flex px-10 items-center w-full h-full sm:h-[55px] sm:rounded-full dark:bg-gray-950 bg-white shadow-lg shadow-black/10  dark:shadow-black/40 dark:bg-opacity-75"
         initial={{ opacity: 0, y: -200 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -21,10 +21,10 @@ export default function Navbar() {
       >
         <ul className="flex w-full justify-around flex-wrap">
           {links.map((link, index) => (
-            <ul
+            <li
               onClick={() => Context?.setActiveSection(link.name)}
-              className={clsx("m-1 py-1   px-4 relative", {
-                "text-gray-950": Context?.activeSection === link.name,
+              className={clsx("m-1 py-1   px-4 relative dark:hover:text-gray-300 hover:text-gray-700 transition-all", {
+                "text-gray-950 dark:text-gray-300": Context?.activeSection === link.name,
               })}
               key={index}
             >
@@ -37,10 +37,10 @@ export default function Navbar() {
                     stiffness: 300,
                     damping: 30,
                   }}
-                  className="bg-gray-100 absolute inset-0 rounded-full -z-10"
+                  className="bg-gray-100 dark:bg-gray-800 absolute inset-0 rounded-full -z-10"
                 ></motion.span>
               )}
-            </ul>
+            </li>
           ))}
         </ul>
       </motion.div>
