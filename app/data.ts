@@ -34,7 +34,7 @@ export const projects = [
     description:
     "I have developed an intuitive real-time chat application that offers users a seamless communication experience. Within this application, users can engage in dynamic conversations with others.",
     tags:["REACT","NEXT.JS","TAILWIND","NEST.JS","PRISMA","POSTGRESQL","SOCKET.IO"],
-    imageUrl:"/ft_trans.png"
+    imageUrl:"/chat.png"
   },
   {
     projectName:"WebServ",

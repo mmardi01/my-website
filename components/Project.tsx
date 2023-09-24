@@ -31,13 +31,13 @@ export default function Project({
       className="sm:mb-8 mb-3 last:mb-0 group"
     >
       <section
-        className="bg-gray-100 dark:bg-white/20 hover:dark:bg-white/30 rounded-lg transition hover:bg-gray-200  
-        group-even:pl-8 relative  max-w-[42rem] border sm:h-[28rem]  
+        className="bg-gray-100  dark:bg-white/20 hover:dark:bg-white/30 rounded-lg transition hover:bg-gray-200  
+        sm:group-even:pl-8 relative  max-w-[42rem] border sm:h-[28rem]  
         overflow-hidden sm:pr-8 border-black/5"
       >
-        <div className="pt-4 pb-7 h-full px-5 group-even:ml-[18rem] sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col">
+        <div className="pt-4 pb-7 h-full px-5 sm:group-even:ml-[18rem] sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col">
           <h2 className="text-2xl font-semibold">{projectName}</h2>
-          <p className="mt-2 leading-relaxed dark:text-gray-400 text-gray-700">{description}</p>
+          <p className="mt-2  leading-relaxed dark:text-gray-400 text-gray-700">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <li
@@ -52,21 +52,21 @@ export default function Project({
         <Image
           src={imageUrl}
           alt="Project I worked on "
-          width={600}
-          height={600}
+          width={350}
+          height={350}
           quality={95}
-          className="absolute 
-                group-hover:-translate-x-3 
-                group-hover:scale-105
-                group-hover:translate-y-3 
-                group-hover:-rotate-2 transition
-                group-even:group-hover:rotate-2
-                group-even:group-hover:translate-x-3
-                group-even:group-hover:translate-y-3
-                w-[30rem] group-even:right-[initial] 
-                group-even:left-[-10rem] 
-                top-8 right-[-10rem] 
-                rounded-t-lg shadow-2xl"
+          className="sm:absolute 
+            sm:group-hover:-translate-x-3 
+                sm:group-hover:scale-105
+                sm:group-hover:translate-y-3 
+                sm:group-hover:-rotate-2 transition
+                sm:group-even:group-hover:rotate-2
+                sm:group-even:group-hover:translate-x-3
+                sm:group-even:group-hover:translate-y-3
+                sm:group-even:right-[initial] 
+                sm:group-even:left-[-3rem] 
+                bottom-0  sm:right-[-3rem] 
+                rounded-t-lg shadow-2xl max-[640px]:w-full"
         />
       </section>
     </motion.div>
