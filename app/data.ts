@@ -30,6 +30,13 @@ export const projects = [
     imageUrl:"/ft_trans.png"
   },
   {
+    projectName:"Wordle Game",
+    description:
+    "Wordle is a web-based word game. Players guess a five-letter word in six attempts, receiving feedback with colored tiles indicating correct letters and positions. It's a popular and engaging online game.",
+    tags:["REACT","TAILWIND","REDUX",],
+    imageUrl:"/wordle.png"
+  },
+  {
     projectName:"chat-app",
     description:
     "I have developed an intuitive real-time chat application that offers users a seamless communication experience. Within this application, users can engage in dynamic conversations with others.",
